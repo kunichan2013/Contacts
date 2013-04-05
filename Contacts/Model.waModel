@@ -1,1 +1,180 @@
-﻿{	"dbInfo": [		{			"name": "Model",			"uuid": "DEB2380315EE8E47AF7052ECFC4FADBC"		}	],	"dataClasses": [		{			"name": "Company",			"className": "Company",			"collectionName": "CompanyCollection",			"scope": "public",			"uuid": "F49F35289CFE414AB5046586F41C3A6B",			"publishAsJSGlobal": true,			"extraProperties": {				"panelColor": "#D8D8D8",				"__CDATA": "\n\n\t\t\n",				"panel": {					"isOpen": "true",					"pathVisible": "true",					"__CDATA": "\n\n\t\t\t\n",					"position": {						"X": "363",						"Y": "23"					}				}			},			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"uuid": "F00EDC28733F024180F34955236F11A4",					"unique": true,					"autosequence": true,					"type": "long",					"primKey": true				},				{					"name": "name",					"kind": "storage",					"scope": "public",					"uuid": "F15BF4873EA3E040922770FBDAA373B5",					"type": "string",					"fixedLength": 100				},				{					"name": "allEmployees",					"kind": "relatedEntities",					"scope": "public",					"type": "EmployeeCollection",					"reversePath": true,					"path": "company"				}			]		},		{			"name": "Employee",			"className": "Employee",			"collectionName": "EmployeeCollection",			"scope": "public",			"uuid": "49CC61FA41BFB94F92AAFAC2D184C20F",			"publishAsJSGlobal": true,			"extraProperties": {				"panelColor": "#CCC1D9",				"__CDATA": "\n\n\t\t\n",				"panel": {					"isOpen": "true",					"pathVisible": "true",					"__CDATA": "\n\n\t\t\t\n",					"position": {						"X": "25",						"Y": "20"					}				}			},			"attributes": [				{					"name": "ID",					"kind": "storage",					"scope": "public",					"uuid": "C78EB0BBBE502B439B535CECDF89D627",					"unique": true,					"autosequence": true,					"type": "long",					"primKey": true				},				{					"name": "firstName",					"kind": "storage",					"scope": "public",					"uuid": "877F1260499DB141BDF3870D4704BCA1",					"type": "string"				},				{					"name": "lastName",					"kind": "storage",					"scope": "public",					"uuid": "7D93F9788AF4664FB40522C9919398DE",					"type": "string"				},				{					"name": "salary",					"kind": "storage",					"scope": "public",					"uuid": "23965039B5B1FE4BA67F4FFF65E9E2F5",					"type": "number"				},				{					"name": "company",					"kind": "relatedEntity",					"scope": "public",					"uuid": "CFC65475CAEF124A9EB1E346D1318A28",					"type": "Company",					"path": "Company"				}			]		}	],	"extraProperties": {		"model": {			"relationCurve": {				"run": true,				"mode": 1			},			"workspaceLeft": 0,			"workspaceTop": 0		},		"classes": {			"Company": {				"panelColor": "#D8D8D8",				"__CDATA": "\n\n\t\t\n",				"panel": {					"isOpen": "true",					"pathVisible": "true",					"__CDATA": "\n\n\t\t\t\n",					"position": {						"X": "363",						"Y": "23"					}				}			},			"Employee": {				"panelColor": "#CCC1D9",				"__CDATA": "\n\n\t\t\n",				"panel": {					"isOpen": "true",					"pathVisible": "true",					"__CDATA": "\n\n\t\t\t\n",					"position": {						"X": 87,						"Y": 33					}				}			}		},		"version": "1"	},	"toJSON": true}
+﻿{
+	"toJSON": true,
+	"dbInfo": [
+		{
+			"name": "Model",
+			"uuid": "DEB2380315EE8E47AF7052ECFC4FADBC"
+		}
+	],
+	"extraProperties": {
+		"version": "1",
+		"model": {
+			"workspaceLeft": 0,
+			"workspaceTop": 0,
+			"relationCurve": {
+				"run": true,
+				"mode": 1
+			}
+		},
+		"classes": {
+			"Company": {
+				"panelColor": "#D8D8D8",
+				"__CDATA": "\n\n\t\t\n",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": "true",
+					"__CDATA": "\n\n\t\t\t\n",
+					"position": {
+						"X": 502,
+						"Y": 249
+					}
+				}
+			},
+			"Employee": {
+				"panelColor": "#CCC1D9",
+				"__CDATA": "\n\n\t\t\n",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": "true",
+					"__CDATA": "\n\n\t\t\t\n",
+					"position": {
+						"X": 80,
+						"Y": 15
+					}
+				}
+			}
+		}
+	},
+	"dataClasses": [
+		{
+			"name": "Company",
+			"className": "Company",
+			"collectionName": "CompanyCollection",
+			"scope": "public",
+			"uuid": "F49F35289CFE414AB5046586F41C3A6B",
+			"publishAsJSGlobal": true,
+			"extraProperties": {
+				"panelColor": "#D8D8D8",
+				"__CDATA": "\n\n\t\t\n",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": "true",
+					"__CDATA": "\n\n\t\t\t\n",
+					"position": {
+						"X": "363",
+						"Y": "23"
+					}
+				}
+			},
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"uuid": "F00EDC28733F024180F34955236F11A4",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "name",
+					"kind": "storage",
+					"scope": "public",
+					"uuid": "F15BF4873EA3E040922770FBDAA373B5",
+					"type": "string"
+				},
+				{
+					"name": "allEmployees",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "EmployeeCollection",
+					"reversePath": true,
+					"path": "company"
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"className": "Employee",
+			"collectionName": "EmployeeCollection",
+			"scope": "public",
+			"uuid": "49CC61FA41BFB94F92AAFAC2D184C20F",
+			"publishAsJSGlobal": true,
+			"extraProperties": {
+				"panelColor": "#CCC1D9",
+				"__CDATA": "\n\n\t\t\n",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": "true",
+					"__CDATA": "\n\n\t\t\t\n",
+					"position": {
+						"X": "25",
+						"Y": "20"
+					}
+				}
+			},
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"uuid": "C78EB0BBBE502B439B535CECDF89D627",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "firstName",
+					"kind": "storage",
+					"scope": "public",
+					"uuid": "877F1260499DB141BDF3870D4704BCA1",
+					"type": "string"
+				},
+				{
+					"name": "lastName",
+					"kind": "storage",
+					"scope": "public",
+					"uuid": "7D93F9788AF4664FB40522C9919398DE",
+					"type": "string"
+				},
+				{
+					"name": "fullName",
+					"kind": "calculated",
+					"scope": "public",
+					"type": "string",
+					"scriptKind": "javascript",
+					"onGet": [
+						{
+							"from": "guidedModel.Employee.fullName.onGet"
+						}
+					]
+				},
+				{
+					"name": "salary",
+					"kind": "storage",
+					"scope": "public",
+					"uuid": "23965039B5B1FE4BA67F4FFF65E9E2F5",
+					"type": "number"
+				},
+				{
+					"name": "company",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"uuid": "CFC65475CAEF124A9EB1E346D1318A28",
+					"type": "Company",
+					"path": "Company"
+				}
+			],
+			"methods": [
+				{
+					"name": "myReport",
+					"applyTo": "entityCollection",
+					"scope": "public",
+					"from": "guidedModel.Employee.collectionMethods.myReport"
+				}
+			]
+		}
+	]
+}
