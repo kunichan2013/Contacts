@@ -1,0 +1,1 @@
+﻿var ary = new Array("Yamada", 29, "Tokyo");var str = ary.join("\n");console.log(str);console.log("KONBANHA");var r = 0;
